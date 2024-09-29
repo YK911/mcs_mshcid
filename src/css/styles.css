@@ -1,18 +1,24 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+/* Utils styles */
+@import url('./utils/variables.css');
+@import url('./utils/reset.css');
+@import url('./utils/animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+/* Base styles */
+@import url('./base/base.css');
+@import url('./base/section.css');
+@import url('./base/container.css');
+
+/* Common components */
+@import url('./components/logo.css');
+@import url('./components/btn.css');
+
+/* Components style */
+@import url('./components/header.css');
+@import url('./components/nav.css');
+@import url('./components/mobile-menu.css');
+@import url('./components/hero.css');
+@import url('./components/about.css');
+@import url('./components/features.css');
+@import url('./components/marketing.css');
+@import url('./components/contacts.css');
+@import url('./components/footer.css');

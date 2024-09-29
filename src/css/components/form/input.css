@@ -1,0 +1,6 @@
+.field {
+}
+.field:focus {
+}
+.field:not(:placeholder-shown):required:valid {
+}

@@ -1,0 +1,6 @@
+.mesasge {
+}
+.mesasge:focus {
+}
+.mesasge:not(:placeholder-shown):required:valid {
+}

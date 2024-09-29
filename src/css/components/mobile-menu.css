@@ -1,0 +1,18 @@
+.mobile-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 1232px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+.header .mobile-menu-btn {
+  margin-right: 61px;
+}
+@media only screen and (min-width: 768px) {
+  .header .mobile-menu-btn {
+    margin-right: 37px;
+  }
+}

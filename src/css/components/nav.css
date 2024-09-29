@@ -1,0 +1,40 @@
+.nav {
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .nav {
+    justify-content: space-between;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1231px) {
+  .nav-list {
+    display: none;
+  }
+}
+.header-nav-list {
+  gap: 17px;
+}
+.mobile-nav-list {
+  flex-direction: column;
+  gap: 34px;
+}
+
+.nav-link {
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  line-height: 1.87;
+  color: #2f281e;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ff9900;
+}

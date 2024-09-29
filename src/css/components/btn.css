@@ -1,0 +1,25 @@
+.btn {
+  min-width: 104px;
+  min-height: 46px;
+  padding: 12px;
+  font-family: var(--secondare-font);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.outlined {
+  color: #173a56;
+  border: 1px solid #bcd0e5;
+}
+.outlined:hover,
+.outlined:focus {
+}
+
+.filled {
+  color: #fff;
+  background-color: #f90;
+}
+.filled:hover,
+.filled:focus {
+}
