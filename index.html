@@ -5,116 +5,159 @@
     <link rel="icon" type="image/svg+xml" href="/mcs_mshcid/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;700&display=swap"
+  rel="stylesheet"
+/>
+
     <script type="module" crossorigin src="/mcs_mshcid/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/mcs_mshcid/assets/index-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/mcs_mshcid/assets/index-X8EkzsyB.css">
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
-  <div class="container">
+  <div class="header-container container">
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/mcs_mshcid/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
+      <button class="mobile-menu-btn" type="button">
+        <svg class="mobile-menu-btn-icon" width="27" height="22">
+  <use href="/mcs_mshcid/assets/sprite-RFD2XSGY.svg#burger-menu"></use>
+</svg>
+
+      </button>
+      <a class="logo" href="./index.html" aria-label="Site logo">
+        <img
+          src="data:image/png;base64,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"
+          alt="Logo icon abstract"
+          width="26"
+          height="25"
+        />
+        <svg class="logo-icon" width="100" height="30">
+  <use href="/mcs_mshcid/assets/sprite-RFD2XSGY.svg#logo"></use>
+</svg>
+
       </a>
+
+      <ul class="nav-list header-nav-list">
+  <li class="nav-item">
+    <a class="nav-link" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#services">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#about">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#product">Product</a>
+  </li>
+</ul>
+
     </nav>
+
+    <ul class="header-auth">
+      <li class="header-auth-item">
+        <button class="btn outlined btn-primary" type="button">Sign In</button>
+      </li>
+      <li class="header-auth-item">
+        <button class="btn filled btn-secondary" type="button">Sign Up</button>
+      </li>
+    </ul>
   </div>
 </header>
 
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+      <!-- Hero -->
+      <section class="section hero hero-dark">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/mcs_mshcid/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <h2 class="section-title"></h2>
   </div>
 </section>
 
-      <article class="badges">
+      <!-- Features -->
+      <section class="section features">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <h2 class="section-title"></h2>
+  </div>
+</section>
+
+      <!-- Marketing -->
+      <section class="section marketing">
+  <div class="container"></div>
+</section>
+
+      <!-- Contact us -->
+      <section class="section contacts">
+  <div class="container">
+    <h2 class="section-title"></h2>
+  </div>
+</section>
+
+
+      <section>
+  <div class="container">
+    <h2>Team</h2>
+    <ul>
+      <li>
+        <img
+  class="{=$class}"
+  srcset="/mcs_mshcid/assets/img-1@1x-BmcS5_Hc.jpg, /mcs_mshcid/assets/img-1@2x-D5WLxAxa.jpg"
+  src="/mcs_mshcid/assets/img-1@1x-BmcS5_Hc.jpg"
+  alt="Person"
+  width="264"
+  height="260"
+  loading="lazy"
+/>
+
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li>
+        <img
+  class="{=$class}"
+  srcset="/mcs_mshcid/assets/img-1@1x-BmcS5_Hc.jpg, /mcs_mshcid/assets/img-1@2x-D5WLxAxa.jpg"
+  src="/mcs_mshcid/assets/img-1@1x-BmcS5_Hc.jpg"
+  alt="Person"
+  width="264"
+  height="260"
+  loading="lazy"
+/>
+
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li>
+        <img
+  class="{=$class}"
+  srcset="/mcs_mshcid/assets/img-1@1x-BmcS5_Hc.jpg, /mcs_mshcid/assets/img-1@2x-D5WLxAxa.jpg"
+  src="/mcs_mshcid/assets/img-1@1x-BmcS5_Hc.jpg"
+  alt="Person"
+  width="264"
+  height="260"
+  loading="lazy"
+/>
+
+      </li>
+      <li>
+        <img
+  class="{=$class}"
+  srcset="/mcs_mshcid/assets/img-1@1x-BmcS5_Hc.jpg, /mcs_mshcid/assets/img-1@2x-D5WLxAxa.jpg"
+  src="/mcs_mshcid/assets/img-1@1x-BmcS5_Hc.jpg"
+  alt="Person"
+  width="264"
+  height="260"
+  loading="lazy"
+/>
+
       </li>
     </ul>
   </div>
-</article>
+</section>
 
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
+  <div class="container"></div>
 </footer>
-
 
   </body>
 </html>
